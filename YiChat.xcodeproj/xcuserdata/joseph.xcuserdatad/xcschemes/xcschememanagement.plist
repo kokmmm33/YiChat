@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>YiChat.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7C40DD9C1C41A14500A7B430</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C40DDB51C41A14500A7B430</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C40DDC01C41A14500A7B430</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
