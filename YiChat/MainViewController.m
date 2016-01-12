@@ -7,6 +7,10 @@
 //
 
 #import "MainViewController.h"
+#import "NewsViewController.h"
+#import "ChatViewController.h"
+#import "FileViewController.h"
+#import "PersonalViewController.h"
 
 @interface MainViewController ()
 
@@ -16,7 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self creatSubVC];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +30,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+//添加子视图
+-(void)creatSubVC
+{
+    NewsViewController *newsVC = [[NewsViewController alloc]init];
+    newsVC.tabBarItem.title = @"新闻";
+    [self addChildViewController:newsVC];
+    
+    ChatViewController *chatVC = [[ChatViewController alloc]init];
+    chatVC.tabBarItem.title = @"聊天";
+    [self addChildViewController:chatVC];
+    
+    FileViewController *fileVC = [[FileViewController alloc]init];
+    fileVC.tabBarItem.title = @"文件";
+    [self addChildViewController:fileVC];
+    
+    PersonalViewController *personalVC = [[PersonalViewController alloc]init];
+    personalVC.tabBarItem.title = @"个人";
+    [self addChildViewController:personalVC];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
