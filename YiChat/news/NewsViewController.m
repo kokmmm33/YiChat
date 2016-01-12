@@ -19,6 +19,10 @@
     self.view.backgroundColor = [UIColor redColor];
     NSLog(@"git测试");
     NSLog(@"第二个log输出");
+    _tableView = [[UITableView alloc]initWithFrame:self.view.frame];
+    
+    [self.view addSubview:self.tableView];
+
 }
 
 - (void)didReceiveMemoryWarning {

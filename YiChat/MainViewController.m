@@ -34,19 +34,23 @@
 -(void)creatSubVC
 {
     NewsViewController *newsVC = [[NewsViewController alloc]init];
-    newsVC.tabBarItem.title = @"新闻";
+    newsVC.tabBarItem.title = @"聊天";
+    newsVC.tabBarItem.image = [UIImage imageNamed:@"main"];
     [self addChildViewController:newsVC];
     
     ChatViewController *chatVC = [[ChatViewController alloc]init];
-    chatVC.tabBarItem.title = @"聊天";
+    chatVC.tabBarItem.title = @"新闻";
+    chatVC.tabBarItem.image = [UIImage imageNamed:@"news"];
     [self addChildViewController:chatVC];
     
     FileViewController *fileVC = [[FileViewController alloc]init];
     fileVC.tabBarItem.title = @"文件";
+    fileVC.tabBarItem.image = [UIImage imageNamed:@"file"];
     [self addChildViewController:fileVC];
     
     PersonalViewController *personalVC = [[PersonalViewController alloc]init];
     personalVC.tabBarItem.title = @"个人";
+    personalVC.tabBarItem.image = [UIImage imageNamed:@"person"];
     [self addChildViewController:personalVC];
 
 }
